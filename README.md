@@ -1,4 +1,4 @@
 # anoddpm
 まだ途中です。
 
-[論文](https://ieeexplore.ieee.org/document/9857019)
+[AnoDDPM: Anomaly Detection with Denoising Diffusion Probabilistic Models using Simplex Noise](https://ieeexplore.ieee.org/document/9857019)
