@@ -1,0 +1,56 @@
+
+{
+  "training": {
+      "seed": 2704, 
+      "timesteps":1000,
+      "t_distance": 250,
+      "n_epochs": 100,
+      "noise": "simplex",
+      "base_channels": 128,
+      "beta_schedule": "cosine",
+      "channel_mults": "",
+      "loss_type": "l2",
+      "loss_weight": "none",
+      "train_start": true,
+      "lr": 1e-4,
+      "random_slice": true,
+      "sample_distance": 40,
+      "weight_decay": 0.0,
+      "save_imgs":false,
+      "save_vids":true,
+      "dropout":0,
+      "attention_resolutions":"32,16,8",
+      "num_heads":4,
+      "num_head_channels":64,
+      "sync_batchnorm": true, 
+      "use_cuda": true, 
+      "visible_devices": "0,1,2,3", 
+      "val_mode": "train"
+  }, 
+  "save": {
+      "study_name": "result_folder", 
+      "output_root_dir": "result/", 
+      "save_epoch_interval": 200, 
+      "save_image_epoch_interval": 2, 
+      "n_saved": 1, 
+      "log_iter_interval": 100, 
+      "n_save_images": 4, 
+      "load_model_dir": "", 
+      "model_savename": "", 
+      "num_seed": 100
+  }, 
+  "dataset": {
+      "mode": "train", 
+      "name": "Dataset", 
+      "root_dir_path": "./data/brats_separated", 
+      "select_slice": "flair", 
+      "use_augmentation": true, 
+      "batch_size": 4, 
+      "num_workers": 16, 
+      "image_size": 256
+  }, 
+  "model": {
+      "input_dim": 1, 
+      "saved": false
+  }
+}
